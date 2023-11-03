@@ -1,0 +1,322 @@
+html {
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Noto Sans JP', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.pop {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;/* 横幅がきつくなった際にかってに改行をしてくれる */
+    align-items: center;/* 縦軸に対して中央ぞろえ */
+}
+
+header {
+    padding: 27px 0;/* 縦　横 */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.04em; /* 文字間隔 */
+
+}
+
+.logo span {
+    color: #80ba4a;
+}
+
+.header_menu li {
+    margin-left: 40px;
+}
+
+.header_menu li a{ /* 文字の色を変える際は＜a＞タグに適用させる */
+    transition: 0.3s;
+}
+
+.header_menu li a:hover{
+    color: #80ba4a;
+}
+
+
+@media only screen and (max-width: 768px){
+    header .container {    /* 半角スペース開ける */
+        justify-content: center;
+    }
+    .header_menu li {
+        margin: 20px 16px 0; /* 時計周り */
+    }
+}
+
+/* main */
+
+#hero {
+    background-image: url(../img/SARADA.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 540px;
+    border-radius: 30px; /* 角を丸める */
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    overflow: hidden; /* はみ出た部分はカットしろ */
+}
+
+#hero::before { /* おまけをつけることができる */
+    content: '';/* つけなければならない */
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left:  0;
+    opacity: 0.2;/* 20% */
+    z-index: 1; /* 1層目 */
+}
+
+.hero_inner {
+    z-index: 2; /* 2層目 */
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+}
+
+.hero_inner p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.hero_inner h1{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px){
+    #hero{
+        height: 460px;
+    }
+    .hero_inner p {
+        font-size: 15px;
+    }
+    .hero_inner h1 {
+        font-size: 17px;
+    }
+}
+
+
+/* concept */
+
+#concept {
+    margin-bottom: 120px;
+    
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #80ba4a;
+    margin-bottom: 60px;
+}
+
+#concept h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.column-2 {
+    width: 48%;
+}
+
+.text {
+    line-height: 2;/* 行間を指定する */
+}
+
+.concept-img {
+    background-image: url(../img/手.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 340px;
+    width: 48%;
+    border-radius: 20px;
+}
+
+.heading {
+    font-family: 'Dancing Script', cursive;
+    font-size: 200px;
+    font-weight: 700;
+    color: #80ba4a;
+    opacity: 0.1;
+    position: absolute;/* 浮かしたい時、被せたい時に使用する */
+    top: 0;
+    right: 0;
+    transform: translateY(-30%);/* 縦軸を文字の大きさ30%分上にあげた */
+    z-index: -1;/* 後ろ側に設定する */
+}
+
+
+@media only screen and (max-width: 768px){
+    #concept h3 {
+        font-size:  24px;
+        line-height: 1.5;
+    }
+    .column-2 {
+        width: 100%;
+    }
+
+    .text {
+        line-height: 1.7;
+        font-size: 15px;
+    }
+
+    .concept-img {
+        margin-top: 20px;
+    }
+
+}
+
+/* サービス */
+
+#service {
+    margin-bottom: 120px;
+}
+
+.service_inner {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.column-40 {
+    width: 40%;
+}
+
+.column-55 {
+    width: 55%;
+}
+
+#service img {
+    border-radius: 20px;
+}
+
+#service h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .column-40 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .column-55 {
+        width: 100%;
+    }
+
+    #service h3 {
+        font-size: 17px;
+    }
+}
+
+/* company */
+
+#company {
+    margin-bottom: 120px;
+}
+
+#company dl {
+    max-width: 900px;
+    margin-left: auto;
+}
+
+#company dt {
+    width: 30%;
+    padding: 48px 0;
+    font-weight: 600;
+    border-bottom: solid 1px #d2ecba;
+}
+
+#company dd {
+    width: 70%;
+    padding: 48px 0;
+    border-bottom: solid 1px #d2ecba;
+}
+
+
+@media only screen and (max-width: 768px){
+    #company dl {
+        font-size: 13px;
+    }
+}
+
+/* botom */
+
+.column-a {
+    background-image: url(../img/SARADA.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 270px;
+    width: 24%;
+    border-radius: 20px;
+}
+
+.column-b {
+    background-image: url(../img/111.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 270px;
+    width: 18%;
+    border-radius: 20px;
+}
+.column-c {
+    background-image: url(../img/222.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 270px;
+    width: 24%;
+    border-radius: 20px;
+}
+.column-d {
+    background-image: url(../img/333.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 270px;
+    width: 28%;
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .column-a , .column-b , .column-c , .column-d {
+        width: 48%;
+        height: 140px;
+        margin: 1%;
+    }
+}
+
+/* footer */
+footer {
+    text-align: center;
+    margin: 90px 0;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+

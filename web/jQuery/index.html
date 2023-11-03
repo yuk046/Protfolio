@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+    <title>jQuery</title>
+</head>
+<body>
+    <div id="div1" style="background: aqua;">div1</div>
+
+    <input type="button" id="button1" value="ボタン１">
+    <input type="button" id="button2" value="ボタン2">
+
+    <script>
+        $('#button1').click(function(){
+            $('#div1').css('background-color','Red');
+        });
+        $('#button2').click(function(){
+            $('#div1').css('background-color','aqua');
+        });
+        $(function(){ /* readyイベント */
+            $('#div1').fadeOut();
+        });
+    </script>
+</body>
+</html>

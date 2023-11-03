@@ -1,0 +1,250 @@
+@charset "UTF-8"; /* 文字コードを設定する */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #24292e;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 130px auto;
+    font-size: 0.9rem;
+    padding: 0 4%;
+}
+
+.site-title {
+    line-height: 1px; /* 行間 */
+}
+
+.site-title a {
+    display: block;
+}
+
+.sec-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+/* header */
+
+#header {
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 270px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+#header ul {
+    display: flex;
+    padding: 10px 0;
+}
+
+#header ul li {
+    font-size: 0.9rem;
+    margin-left: 30px;
+}
+
+#header li img{
+    width: 20px;
+}
+
+#header li a {
+    color: #24292e;
+}
+
+#header li a:hover {
+    opacity: 0.5;
+}
+
+/* mainimg */
+
+#mainimg {
+    margin-bottom: 80px;
+}
+
+#mainimg img {
+    width: 100%;
+    max-width: 1920px;
+    height: 420px;
+    object-fit: cover; /* カットして縦横比率を変えない */
+}
+
+/* about */
+
+#about ul {
+    margin-bottom: 30px;
+}
+
+#about li:first-child { /* 最初の子要素を選択する */
+    margin-bottom: 30px;
+}
+
+#about p {
+    text-align: justify;/* 両端ぞろえ */
+}
+
+#works ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;/* 折り返す */
+    margin-bottom: 50px;
+}
+
+#works li {
+    width: 31%;
+    margin-bottom: 23px;
+}
+
+#news dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 1px #c8c8c8;
+    margin-bottom: 20px;
+}
+
+#news dt {
+    width: 20%;
+    border-bottom: solid 1px #c8c8c8;
+    padding: 15px;
+}
+
+#news dd {
+    width: 80%;
+    border-bottom: solid 1px #c8c8c8;
+    padding: 15px;  
+}
+
+#contact dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#contact dt {
+    width: 15%;
+}
+
+#contact dd {
+    width: 85%;
+    padding: 10px;
+}
+
+#contact dd input,
+#contact dd textarea {
+    width: 100%;
+    border: solid 1px #c8c8c8;
+    padding: 10px;
+}
+
+#contact dd textarea {
+    height: 10rem;
+}
+
+#contact .button {
+    text-align: center;
+}
+
+#contact .button input {
+    width: 200px;
+    background-color: #24292e;
+    color: #fff;
+    padding: 15px 0;
+    border: solid 1px #24292e;
+    transition-duration: 0.3s;
+}
+
+#contact .button input:hover {
+    background-color: #fff;
+    color: #24292e;
+}
+
+#footer {
+    color: #fff;
+    background-color: #24292e;
+    font-size: 0.5rem;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        margin-bottom: 70px; /* 130px */
+    }
+    .site-title {
+        margin-top: 20px;
+    }
+    .sec-title {
+        margin-bottom: 40px; /* 65px */
+    }
+
+    /* header */
+
+    #header {
+        max-width: 100%;
+        height: auto;
+        flex-direction: column;/* 縦並びに戻す */
+    }
+    #header li {
+        font-size: 0.8rem;
+        margin-left: 20px;
+    }
+    #header li:first-child {
+        margin-left: 0;
+    }
+
+    /* works */
+    #works ul {
+        flex-direction: column;
+    }
+    #works li {
+        width: 100%;
+    }
+
+    /* news */
+    #news dl {
+        flex-direction: column;
+    }
+    #news dt {
+        width: 100%;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    #news dd {
+        width: 100%;
+        padding-top: 0;
+    }
+
+
+    /* contact */
+
+    #contact dl {
+        flex-direction: column;
+    }
+    #contact dt {
+        width: 100%;
+    }
+    #contact dd {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+}

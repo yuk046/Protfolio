@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content="ここに説明文が入る">
+<!-- reset.css ress -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Murecho:wght@100&family=Zen+Kaku+Gothic+New:wght@300;900&display=swap" rel="stylesheet">
+    <title>練習</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header id="header">
+        <h1 class="site_title">
+            <a href="#"> YukiCode </a>
+        </h1>
+        <nav>
+            <ul><!-- 箇条書きができるようになるタグ -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src="../img/twitter.png" class="icon" alt="Twitter"></a><!-- targetで別タグで開くように設定する -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+        <picture>
+            <source media="(max-width: 600px)" srcset="../img/main-sp.jpg" />
+            <img src="../img/main-pc.jpg" alt="">
+        </picture>
+
+    </div>
+
+    <!-- about -->
+    <section id="about" class="wrapper">
+        <h2 class="sec-title">About</h2>
+        <ul>
+            <li>Yukicode株式会社</li>
+            <li>メディア情報工学科3年生</li>
+            <li>現在、ガクチカがないためweb制作を学習中</li>
+            <li>メールアドレス : yukidora6464@gmail.com</li>
+        </ul>
+        <p>Pythonが好きで色々なライブラリーを試していますが、試し過ぎて何も身の役に立っていません。まだ届いていませんが、HHKBを買いました。メンブレンキーボードと構造が似ていると言われていてとても打鍵感が心配です。</p>
+    </section>
+
+    <!-- works -->
+    <section id="works" class="wrapper">
+        <h2 class="sec-title">Works</h2>
+        <ul>
+            <li><img src="../img/works1.jpg" alt="works1"></li>
+            <li><img src="../img/works2.jpg" alt="works1"></li>
+            <li><img src="../img/works3.jpg" alt="works1"></li>
+            <li><img src="../img/works4.jpg" alt="works1"></li>
+            <li><img src="../img/works5.jpg" alt="works1"></li>
+            <li><img src="../img/works6.jpg" alt="works1"></li>
+            <li><img src="../img/works1.jpg" alt="works1"></li>
+            <li><img src="../img/works2.jpg" alt="works1"></li>
+            <li><img src="../img/works3.jpg" alt="works1"></li>
+        </ul>
+    </section>
+
+    <!-- news -->
+    <section id="news" class="wrapper">
+        <h2 class="sec-title">News</h2>
+        <dl><!-- 説明リスト -->
+            <dt>2022/10/29</dt>
+            <dd>本サイトをリリースしました。</dd>
+            <dt>2022/10/29</dt>
+            <dd>プログラミングチュートリアル体験！</dd>
+            <dt>2022/10/29</dt>
+            <dd>フロントエンドから学んでいく！</dd>
+            <dt>2022/10/29</dt>
+            <dd>エンジニアになりたい</dd>
+            <dt>2022/10/29</dt>
+            <dd>インターン頑張るぞ！</dd>
+        </dl>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="wrapper">
+        <h2 class="sec-title">Contact</h2>
+        <p>お問い合わせは以下のフォームから</p>
+        <form action="#" method="post">
+            <dl><!-- 説明リスト -->
+                <dt><label for="name">お名前</label></dt>
+                <dd><input type="text" id="name"></dd>
+                <dt><label for="email">メールアドレス</label></dt>
+                <dd><input type="email" id="email"></dd>
+                <dt><label for="content">内容</label></dt>
+                <dd><textarea id="content" cols="30" rows="10"></textarea></dd>
+            </dl>
+            <div class="button"><input type="submit" value="送信"/></div>
+        </form>
+    </section>
+</body>
+</html>

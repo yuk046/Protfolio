@@ -1,0 +1,116 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #383e45;
+    font-size: 0.9rem;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 100px auto;
+    padding: 0 4%;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+#header {
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 4%;
+    margin: 10px auto;
+    align-items: center;
+
+}
+
+#header ul li {
+    margin-left: 30px;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+
+.site-title {
+    width: 120px;
+    height: 40px;
+}
+
+#header ul {
+    display: flex;
+}
+
+.main img {
+    width: 100%;
+    max-width: 1920px;
+    height: 600px;
+    object-fit: cover; /* 縦横比を変えずにzoom in out する */
+}
+
+
+/* about */
+#about {
+    max-width: 960px;
+}
+
+.page-title {
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 60px;
+    border-bottom: solid 1px #383e45
+}
+
+
+#about img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+#about .text {
+    text-align: left;
+}
+
+#about .text h3{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.text p {
+    margin-bottom: 10px;
+}
+
+#bicycle ul {
+    display: flex;
+}
+
+#bicycle li {
+    margin-right: 20px;
+}
+
+#bicycle li h3{
+    margin: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+footer {
+    font-size: 0.5rem;
+    padding: 10px 0;
+    text-align: center;
+}
