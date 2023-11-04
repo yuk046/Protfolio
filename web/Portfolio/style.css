@@ -173,11 +173,12 @@ li {
     margin-bottom: 60px;
 }
 
-#coding .grid , #works .grid {
+#coding .grid , #works .grid{
     display: grid;
     gap: 26px;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 }
+
 
 #coding .grid .item , #works .grid .item{
     transition: all 0.3 ease;
@@ -237,6 +238,9 @@ li {
 
 #footer {
     padding: 0 4%;
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
 }
 #footer ul {
     display: flex;
@@ -250,6 +254,102 @@ li {
 }
 
 #footer ul li a:hover{
-    color: rgb(177, 24, 182);
+    color: #d17ec7;
     opacity: 50%;
 }
+
+/* pro-site */
+
+.pro-title{
+    margin-bottom: 50px;
+}
+
+.pro-title2 {
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.pro-title2 a {
+    color: #333;
+    transition: all .3s ease;
+}
+
+.pro-title2 a:hover {
+    color: #d17ec7;
+    font-size: 1.4rem;
+}
+
+#pro-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+#pro-item .pro-item-text {
+    width: 42%;
+  }
+  /*
+  text-align: justify;
+  テキストの両端を揃える
+  */
+#pro-item .pro-item-text p {
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+#pro-item .pro-item-img {
+    width: 50%;
+}
+
+#pro-item .pro-item-img img {
+    width: 50%;
+    max-height: 600px;
+}
+
+@media screen and (max-width: 600px) {
+    .sec-title {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+  
+    #header {
+      padding: 20px 16px;
+    }
+
+    #coding , #works {
+      padding: 80px 16px;
+    }
+    #coding .grid .item-content , #works .grid .item-content{
+      padding: 16px;
+    }
+
+    #footer {
+        flex-direction: column;
+    }
+
+    #footer ul , p {
+        margin-bottom: 5px;
+    }
+
+    #pro-item {
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
+    #pro-item .pro-item-text {
+        width: 100%;
+    }
+    
+    #pro-item .pro-item-img {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    #pro-item .pro-item-img img{       
+        width: 100%;
+        max-width: 1280px;
+        max-height: 2535px;
+    }
+}  
