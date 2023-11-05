@@ -162,15 +162,17 @@ li {
     padding-top: 80px;
 }
 
-#mian .image img {
+#main .image img {
+    display: inline-block;
     width: 100%;
     max-width: 1920px;
-    /* max-height: 900px; */
-    object-fit: cover; /* カットして縦横比率を変えない */
+    max-height: 650px;
+    object-fit: cover; 
 }
 
 #main .image {
     margin-bottom: 60px;
+    text-align: center;
 }
 
 #coding .grid , #works .grid{
@@ -316,6 +318,14 @@ li {
   
     #header {
       padding: 20px 16px;
+    }
+
+    #header img {
+        width: 70%;
+    }
+
+    #main .image img {
+        height: 85vh;
     }
 
     #coding , #works {
