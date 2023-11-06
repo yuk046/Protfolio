@@ -2,6 +2,7 @@
 
 html {
   font-size: 100%;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 body {
   color: #121212;
@@ -11,7 +12,20 @@ body {
 a {
   color: #121212;
   text-decoration: none;
+  transition: all .3s;
 }
+
+.a-tag:hover {
+    color: #000000;
+    border-color: #000;
+    opacity: 0.7;
+}
+
+.a-tag {
+    color: #d17ec7;
+    border-bottom: solid 1px #d17ec7;
+}
+
 img {
   max-width: 100%;
 }
@@ -181,7 +195,6 @@ li {
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 }
 
-
 #coding .grid .item , #works .grid .item{
     transition: all 0.3 ease;
     box-shadow: 0 0 8px 4px #ccc; /* kage */
@@ -225,7 +238,8 @@ li {
 
 #about {
     margin-bottom: 60px;
-    /* font-family: ; */
+    font-size: 1.3rem;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 
@@ -236,6 +250,7 @@ li {
 #about ul li:first-child {
     margin-bottom: 20px;
 }
+
 
 
 #footer {
@@ -290,6 +305,7 @@ li {
 
 #pro-item .pro-item-text {
     width: 42%;
+    font-family: 'Noto Sans JP', sans-serif;
   }
   /*
   text-align: justify;
@@ -306,7 +322,7 @@ li {
 }
 
 #pro-item .pro-item-img img {
-    width: 50%;
+    /* width: 50%; */
     max-height: 600px;
 }
 
@@ -363,3 +379,12 @@ li {
         max-height: 2535px;
     }
 }  
+
+@media screen and (min-width: 953px) {
+    .pro-footer {
+        padding: 0 4%;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
